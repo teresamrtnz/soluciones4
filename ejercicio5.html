@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 5</title>
+		<meta charset="utf-8">
+		<script>
+			function suma() {
+				var numero1 = prompt("Introduce un número", "");
+				var numero2 = prompt("Introduce otro número", "");
+				numero1 = parseInt(numero1);
+				numero2 = parseInt(numero2);
+				alert("El resultado es " + (numero1 + numero2));
+			}
+			function resta() {
+				var numero1 = prompt("Introduce un número", "");
+				var numero2 = prompt("Introduce otro número", "");
+				numero1 = parseInt(numero1);
+				numero2 = parseInt(numero2);
+				alert("El resultado es " + (numero1 - numero2));
+			}
+			function multiplicacion() {
+				var numero1 = prompt("Introduce un número", "");
+				var numero2 = prompt("Introduce otro número", "");
+				numero1 = parseInt(numero1);
+				numero2 = parseInt(numero2);
+				alert("El resultado es " + (numero1 * numero2));
+			}
+			function division() {
+				var numero1 = prompt("Introduce un número", "");
+				var numero2 = prompt("Introduce otro número", "");
+				numero1 = parseInt(numero1);
+				numero2 = parseInt(numero2);
+				alert("El resultado es " + (numero1 / numero2));
+			}
+		</script>
+	</head>
+	<body>
+		<span onclick="suma()">+</span><br>
+		<span onclick="resta()">-</span><br>
+		<span onclick="multiplicacion()">*</span><br>
+		<span onclick="division()">/</span><br>
+	</body>
+</html>

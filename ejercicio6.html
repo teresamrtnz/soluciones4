@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 6</title>
+		<meta charset="utf-8">
+		<script>
+			function realizarOperacion(operacion) {
+				var numero1 = prompt("Introduce un número", "");
+				var numero2 = prompt("Introduce otro número", "");
+				numero1 = parseInt(numero1);
+				numero2 = parseInt(numero2);
+				var resultado;
+				switch (operacion) {
+					case "+":resultado = numero1+numero2; break;
+					case "-":resultado = numero1-numero2; break;
+					case "*":resultado = numero1*numero2; break;
+					case "/":resultado = numero1/numero2; break;
+				}
+				alert("El resultado es " + resultado);
+			}
+		</script>
+	</head>
+	<body>
+		<span onclick="realizarOperacion('+')">+</span><br>
+		<span onclick="realizarOperacion('-')">-</span><br>
+		<span onclick="realizarOperacion('*')">*</span><br>
+		<span onclick="realizarOperacion('/')">/</span><br>
+	</body>
+</html>

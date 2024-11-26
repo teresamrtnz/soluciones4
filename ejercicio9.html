@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 9</title>
+	<script>
+		var operando1 = "";
+		var operando2 = "";
+		var operador = "";
+		var primerOperando = true;
+		var resultado = "";
+		function agnadirDigito(digito) {
+			if (primerOperando) {
+				operando1 = operando1 + digito;
+			}
+			else {
+				operando2 = operando2 + digito;
+			}
+		}
+		function incluirOperador(unOperador) {
+			operador = unOperador;
+			primerOperando = false;
+		}
+		function calcularResultado() {
+			operando1 = parseInt(operando1);
+			operando2 = parseInt(operando2);
+			switch (operador) {
+				case "+":resultado = operando1 + operando2; break;
+				case "-":resultado = operando1-operando2; break;
+				case "*":resultado = operando1*operando2; break;
+				case "/":resultado = operando1/operando2; break;
+			}
+			alert(resultado);
+			
+			// Solución ejercicio 9. Debemos volver a inicializar las variables
+			operando1 = "";
+			operando2 = "";
+			operador = "";
+			primerOperando = true;
+			resultado = "";
+		}
+	</script>
+	</head>
+	<body>
+		<form name="formulario">
+			<input type="button" value="1" onclick="agnadirDigito('1');">
+			<input type="button" value="2" onclick="agnadirDigito('2');">
+			<input type="button" value="3" onclick="agnadirDigito('3');"> <br>
+			<input type="button" value="4" onclick="agnadirDigito('4');">
+			<input type="button" value="5" onclick="agnadirDigito('5');">
+			<input type="button" value="6" onclick="agnadirDigito('6');"> <br>
+			<input type="button" value="7" onclick="agnadirDigito('7');">
+			<input type="button" value="8" onclick="agnadirDigito('8');">
+			<input type="button" value="9" onclick="agnadirDigito('9');"> <br>
+			<input type="button" value="+" onclick="incluirOperador('+');">
+			<input type="button" value="-" onclick="incluirOperador('-');">
+			<input type="button" value="*" onclick="incluirOperador('*');">
+			<input type="button" value="/" onclick="incluirOperador('/');">
+			<input type="button" value="=" onclick="calcularResultado();">
+		</form>
+	</body>
+</html>

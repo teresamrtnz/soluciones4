@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 3</title>
+		<meta charset="utf-8">
+		<script>
+			function imprimirTexto(numero, texto) {
+				for (var i = 1; i <= numero; i++) {
+					document.write(i + " ");
+					document.write(texto);
+					document.write("<br>");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			var numero = prompt("Introduce el número que quieres imprimir el texto", "");
+			numero = parseInt(numero);
+			var texto = prompt("Introduce el texto", "");
+			imprimirTexto(numero, texto);
+		</script>
+	</body>
+</html>

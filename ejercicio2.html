@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 2</title>
+		<meta charset="utf-8">
+		<script>
+			function imprimirTexto(numero)
+			{
+				for (var i = 0; i < numero; i++) {
+					document.write("Hola mundo");
+					document.write("<br>");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			var numero = prompt("Introduce el número de veces que quieres que se imprima el texto", "");
+			numero = parseInt(numero);
+			imprimirTexto(numero);
+		</script>
+	</body>
+</html>
